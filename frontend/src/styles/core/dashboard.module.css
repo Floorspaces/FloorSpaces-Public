@@ -1,0 +1,23 @@
+/* dashboard.module.css */
+
+.dashboardContainer {
+    background-color: #222;
+    display: flex;
+    min-height: 80vh; 
+    width: 100%; 
+  }
+  
+  .dashboardContent {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+  }
+  
+  .dashboardContent h2 {
+    color: #fff; /* White text color */
+  }
+  
+  .dashboardContent p {
+    color: #ccc; /* Light gray text color */
+    margin-bottom: 10px;
+  }

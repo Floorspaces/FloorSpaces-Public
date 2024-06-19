@@ -1,0 +1,22 @@
+.vs/
+.bin/
+.obj/
+.vscode/
+sources-unity\Floorplan Webgl\.vs/
+sources-unity\Floorplan Webgl\.vscode/
+sources-unity/Floorplan Webgl/[Ll]ibrary/
+sources-unity/Floorplan Webgl/[Tt]emp/
+sources-unity/Floorplan Webgl/[Oo]bj/
+sources-unity/Floorplan Webgl/[Bb]uild/
+sources-unity/Floorplan Webgl/[Bb]uilds/
+sources-unity/Floorplan Webgl/[Ll]ogs/
+sources-unity/Floorplan Webgl/[Uu]ser[Ss]ettings/
+sources-unity\Architect Webgl\.vs/
+sources-unity\Architect Webgl\.vscode/
+sources-unity/Architect Webgl/[Ll]ibrary/
+sources-unity/Architect Webgl/[Tt]emp/
+sources-unity/Architect Webgl/[Oo]bj/
+sources-unity/Architect Webgl/[Bb]uild/
+sources-unity/Architect Webgl/[Bb]uilds/
+sources-unity/Architect Webgl/[Ll]ogs/
+sources-unity/Architect Webgl/[Uu]ser[Ss]ettings/

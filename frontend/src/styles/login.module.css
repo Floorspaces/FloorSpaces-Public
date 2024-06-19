@@ -1,0 +1,89 @@
+.loginPage {
+    color: white;
+}
+
+.loginContainer {
+    color: white;
+    background: rgb(35, 31, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    padding-left: 1vw;
+    padding-right: 2vw;
+    min-height: 25vh;
+    background-color: rgb(16, 16, 16);
+    border-radius: 15px;
+    box-shadow: 1 8px 16px rgba(1, 1, 1, 0.2);
+}
+
+.loginForm input {
+    min-height: 50px;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0 15px;
+}
+
+.loginForm input:focus {
+    background-color: rgba(35, 35, 35, 0.95);
+    color: white;
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.customButton {
+    border-radius: 50px; 
+    padding: 10px 50px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(20, 15, 15);
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.customButton:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.loginMessage {
+    padding-left: 1vw;
+    padding-right: 2vw;
+}
+
+@media (max-width: 576px) {
+    .customButton {
+      padding: 10px 15px;
+    }
+
+    .loginForm {
+        flex-direction: column;
+    }
+    .loginForm > div {
+        flex: none;
+        width: 100%;
+    }
+}
+
+.loginForm .col-md-6 {
+    flex: 1;
+}
+
+.loginForm .col-md-6:first-child {
+    flex: 1;
+}
+
+.loginForm .col-md-6:last-child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

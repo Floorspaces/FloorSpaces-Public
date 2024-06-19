@@ -1,0 +1,23 @@
+/* footer.module.css */
+.footerBg {
+    background-color: rgb(20, 15, 15);
+    border-bottom: 2px solid gray;
+}
+
+.footerText {
+    margin-right: 15px;
+}
+
+.svg {
+    height: 4vh;
+}
+
+.emailButton {
+    color: inherit;
+    text-decoration: none;
+    transition: text-decoration 0.3s;
+  }
+  
+  .emailButton:hover {
+    text-decoration: underline;
+  }

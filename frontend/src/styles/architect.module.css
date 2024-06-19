@@ -1,0 +1,21 @@
+.container {
+    width: 88%;
+    height: 85vh;
+  }
+  
+  .unityIframe {
+    padding-top: 1vh;
+    width: 100%;
+    height: 100%; 
+  }
+  
+  .container {
+    display: flex; /* Enable Flexbox */
+    min-height: 100vh; /* Full viewport height */
+    width: 100%; /* Full width */
+  }
+  
+  .contentWrapper {
+    flex-grow: 1; /* Allow the content to fill the available space */
+  }
+  
