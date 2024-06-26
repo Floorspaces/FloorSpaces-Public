@@ -1,4 +1,6 @@
-# Floorspaces (Created Winter-Sprint '24) (Next.js, .NET, Supabase, Unity WebGL + Azure Web Services)
+# Floorspaces (Created Winter-Spring '24) 
+
+### (Next.js, .NET, Supabase, Unity WebGL + Azure Web Services)
 
 ```
 
