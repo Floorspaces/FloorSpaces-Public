@@ -1,6 +1,6 @@
 # Floorspaces (Created Winter-Spring '24) 
 
-### (Next.js, .NET, Supabase, Unity WebGL + Azure Web Services)
+### (Next.js, .NET, Supabase, Unity WebGL, IBM Cloud)
 
 ```
 
