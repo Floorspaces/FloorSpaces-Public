@@ -6,12 +6,14 @@ Frontend: `npm install` & `npm run start` (Check package.json for confirmation o
 
 Backend: `dotnet restore` & `dotnet run`
 
-SQL Database: Either edit an appsettings.json to place in the backend root folder (setup a Supabase project), or reconfigure this as your own.
- The schema we used should correspond to the file "schema.svg" but check with us on this, it might be an outdated image. Using other Azure services,
- rewriting this to work with an Azure DB or switching to a different platform altogether is the way to go.
+SQL Database: Either edit an appsettings.json to place in the backend root folder (setup a Supabase project),
+or reconfigure this as your own. The schema we used should correspond to the file "schema.svg" but check with
+us on this, it might be an outdated image. Using other Azure services, rewriting this to work with an Azure DB
+or switching to a different platform altogether is the way to go.
 
-NoSQL Bucket Storage: we used IBM Cloud's free tier bucket storage (built on top of AWS S3) (up to 25gb free) to store Unity related files in the cloud,
- reconfigure the key settings or switch this storage configuration altogether.
+NoSQL Bucket Storage: we used IBM Cloud's free tier bucket storage (built on top of AWS S3) (up to 25gb free)
+to store Unity related files in the cloud, reconfigure the key settings or switch this storage configuration
+altogether.
 
 Unity Interfaces: check your bucket storage configurations, then you're good to go!
 
