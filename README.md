@@ -1,47 +1,29 @@
-# Floorspaces
-A live map of your organizations' building integrating with applications, data, and your business' software in total.
+# Floorspaces (Created Winter-Sprint '24) (Next.js, .NET, Supabase, Unity WebGL + Azure Web Services)
 
-### Overview:
+```
 
-We have laid out and connected each part of the system on the web, being able to talk from the frontend, backend, IBM Cloud Object Storage, Supabase SQL storage, and the Unity HTTP Request library. Given the benefits of Unity as a cross-platform game engine, we can similarly use that to benefit our app for businesses. `Floorspaces.io` looks to build a platform where organizations give the architect's hat to any normal employee in their company to design floorplans. These floorplans we call "floorspaces", as the designs compile as high-performance graphical interfaces into the `Floorspaces.io` platform. 
+Frontend: `npm install` & `npm run start` (Check package.json for confirmation or reconfig)
 
-### React + Next.js Frontend
+Backend: `dotnet restore` & `dotnet run`
 
-Hosts all client side interfaces, as well as WebGL builds of our Unity interfaces. Through this combined interface we are able to use React itself or Unity to talk to our backend.
+SQL Database: Either edit an appsettings.json to place in the backend root folder (setup a Supabase project), or reconfigure this as your own. The schema we used should correspond to the file "schema.svg" but check with us on this, it might be an outdated image. Using other Azure services, rewriting this to work with an Azure DB or switching to a different platform altogether is the way to go.
 
-### .NET Backend
+NoSQL Bucket Storage: we used IBM Cloud's free tier bucket storage (built on top of AWS S3) (up to 25gb free) to store Unity related files in the cloud, reconfigure the key settings or switch this storage configuration altogether.
 
-Connects Supabase, IBM Cloud Object Storage, the Unity interfaces, and React. A monolith for sure.
+Unity Interfaces: check your bucket storage configurations, then you're good to go!
 
-#### Development Profile
+```
 
-dotnet run
+Floorspaces is a digital twin concept using Unity & web development architecture to build a web app that can draw and represent **3D maps with business & user data.** This idea of "digital twin" apps has been around
+for a few years now, little did we know at the time of beginning the project. There's certainly tons of features that can be expounded upon to create a unique product and user experience for your application if you'd
+like to create business floor models; you could extend this with the Unity XR library (among others) to pair your 3D live business map to meeting spaces held in and modeled for VR. MappedIn, a great example of this 
+"digital twin" concept we've found recently, allows you to generate maps with AI using the camera on your phone to scan your venue's surroundings. Some of the most developed software in this space has been targeted towards
+real estate insterests, essentially you can take the emerging field of digital twin applications and likely integrate it into your own industry somehow.
 
-#### Production Profile (Only Works on Linode Server w/ SSL Certificate
+As two senior students in the University of Akron Computer Science program, we looked to create something new and marketable for our senior design capstone project. Floorspaces both offered something of value to us, as well as offering (A LOT) of future work ahead of us to work on as a side project. One day we hoped to make fluid the business data, architecture UI, and 3D map. We were able to present this deliverable on design day to Senior Seminar, Computer Graphics, (classes) and also the engineering design showcase. (Hosted in Akron)
 
-backend]# dotnet run --launch-profile https
+![image](https://github.com/Floorspaces/FloorSpaces-Public/assets/93809439/adc0a0bf-a0da-4ded-91ec-145a4320c9ac)
 
-### Supabase DB
+After presenting our working prototype to these classes and the showcase using Vercel, Azure, & IBM Cloud, we were accepted to join this Summer's I-Corps Cohort in Akron (A startup incubator connected to the UA Research Foundation) as well as for a Fitzgerald Institute for Entrepreneurial Studies’ Morgan Startup Grant. After learning of the competition out on the market for such products, with limited market, we declined the grant & cohort membership this Summer seeing the long road ahead of us to develop a competitive graphics application with just 2 developers. Using this concept (the prototype here is in the repo) you can either make your own digital twin platform or try integrating it as a feature into a large application. You can also take the Unity interfaces and port them to any device like desktop, mobile, VR, or game consoles.
 
-Contains tables for the companies and users of floorspaces, allows for business use.
-
-![DB Schema 3/17/2024](./schema.svg "DB Schema 3/17/2024")
-
-### Integrating Designs on Floorspaces.io with Business Data & Applications
-
-The ability to host such a game engine on any device, while sending and recieving HTTP requests with our .NET backend, affords us the opportunity to integrate any web service we or someone else creates. This open communication - between authenticated systems - allows us to make interactive, live, 3d maps with endless opportunities for features, finer graphical details through game design, and fitting the needs of a diverse amount of industries. Integrations proposed in the future:
-
-- Create a public facing API with authentication keys (alike how we do with Supabase/IBM), allowing customers to render their own data on our live floorspaces.
-- Create an on-premises solution for companies to not have to use our cloud services.
-- Create our own messaging system between users.
-- Allow for fullest MS Teams integration as possible to allow people to chat through the cross-platform interface in interesting ways.
-- Integrate with or (more likely) create an HR/Payroll system alike Workday for heavily extended map features.
-- Generally present as many options for integration as possible for businesses in the future, whether they'd like on-premises or cloud solutions.
-
-### A High-Detail Map Designer, Endless Opportunities to Expand Unity Interfaces
-
-Alternatively, there's a lot of work to be done in the Unity side as to offering the highest possible experience for these customers. With the powerful game engine and its ability to make even AAA games, we can focus on endless features to make the idea of creating a floorspace appealing, like rendering people, furniture, and various complex elements relating more to a home builder / architectural game to make the user experience fun, rewarding, and productive.
-
-Creating a desktop version of the Floorspaces.io platform in the future allows for both the aforementioned on-premises solution and the ability to release the floor designer as standalone software, if and only if it offers value in some way to people actually looking to design homes and builings with free software. If we go deep down the direction of allowing complex archiectural and interior design features, we can ship a standalone game with Unity and put it on the Steam store, etc. to gain an initial audience. 
-
-The balance between charging and not charging for a proposed standalone architectural builder with the floorspaces software has some tradeoffs. We can make some money to burn, pocket, or advertise Floorspaces overall with charging on Steam, but then we lose the ability for more people to demo it freely. This is why its likely best to ship the software with some core features free and possibly later monetize parts of the game in some way, but really its easier to charge people a small upfront cost than find a complex monetization scheme for a *home building game* i mean The Sims is different, SecondLife is different because those are real games rather than architectural software in the end. We maybe can demo it personally for people interested in the Floorspaces platform for their business as a start.
+-- Floorspaces Development Team, @nicklim011213 @eseer-divad
